@@ -1,9 +1,9 @@
 # LendingClubLoan_Project
 # Overview
 
-LendingClub adalah perusahaan pinjaman peer-to-peer AS, yang berkantor pusat di San Francisco, California. Perusahaan ini adalah perusahaan yang memberikan pinjaman secara peer-to-peer pertama dengan penawaran keamanan sebagai nilai jual yaitu dengan Securities and Exchange Commission (SEC), dan menawarkan perdagangan pinjaman di pasar sekunder. LendingClub adalah platform pinjaman peer-to-peer terbesar di dunia.
+LendingClub adalah perusahaan pinjaman peer-to-peer asal USA dan berkantor pusat di San Francisco, California. Perusahaan ini memberikan pinjaman secara peer-to-peer pertama dengan jasa keamanan sebagai nilai jual yaitu dengan Securities and Exchange Commission (SEC), selain itu perusahaan ini juga menawarkan perdagangan pinjaman di pasar sekunder. LendingClub adalah platform pinjaman peer-to-peer terbesar di dunia.
 
-Tujuan analsis ini adalah untuk memprediksi apakah seorang calon nasabah akan bisa membayar lunas hutang yang dipinjam atau tidak
+Tujuan analsis dataset ini adalah untuk memprediksi apakah seorang calon nasabah akan bisa membayar lunas hutang yang dipinjam atau tidak
 
 # Code Resources
 
@@ -15,7 +15,7 @@ https://www.kaggle.com/wordsforthewise/lending-club
 
 # Data Cleaning
 
-Setelah mendapatkan data, saya melakukan data cleaning agar dapat digunakan untuk _modelling_. 
+Setelah mendapatkan dataset, saya melakukan _data cleaning_ agar dapat digunakan untuk _modelling_. 
 * mengeliminasi _employer title_ dan _employer length_.
 * menyatukan _title_ dengan _purpose_.
 * mengisi _missing data_ _mort_acc_ dengan rataan nilai _mort_acc_.
@@ -31,12 +31,12 @@ Berikut adalah beberapa contoh hasil analisis data
 
 Pertama, saya mengubah variabel kategori menjadi variabel dummy. Saya juga membagi data _training_ menjadi 20% dari data total. 
 
-Dengan _deep learning_ _with keras_,disini saya menggunakan _Neural Network_ dengan _input layer_ sebanyak 78 dan untuk hidden layer adalah layer sebelumnya dibagi 2 dengan metode aktivasi _ReLU_ (_Rectified Linear Unit_), dengan output layernya 1 dengan metode aktivasi _sigmoid_ dan optimasi _'adam'_ dan loss _'binary-crossentropy'_. Metode ini digunakan karena pada kasus ini hanya ada 2 output yaitu Ya (_Full Paid_) atau Tidak (_Charged Off_).
+Dengan metode _deep learning_ _keras_, saya menggunakan _Neural Network_ dengan _input layer_ sebanyak 78 sel dan untuk _hidden layer_ adalah sel sebelumnya dibagi 2 dengan metode aktivasi _ReLU_ (_Rectified Linear Unit_), dan output layernya 1 dengan metode aktivasi _sigmoid_, optimasi _'adam'_ dan loss _'binary-crossentropy'_. Metode ini digunakan karena pada kasus ini hanya ada 2 output yaitu Ya (_Full Paid_) atau Tidak (_Charged Off_).
 
 * ![Model](/model.png)
 
-dari grafik bisa kita lihat bahwa kurva hasil _training_ (_loss_) dan kurva hasil _test_ (_val_loss_) _overfitting_. sehingga model ini bisa digunakan untuk memprediksi data input lainnya. 
+dari grafik bisa kita lihat bahwa kurva hasil _training_ (_loss_) dan validasi data (_val_loss_) _overfitting_. sehingga model ini bisa digunakan untuk memprediksi data berhubungan. 
 
 # Model Performance
 
-dari hasil _modelling_ didaptakan nilai f-score sebesar 89%, dan setelah diuji coba menggunakan data acak ternyata model bisa memprediksi seorang calon nasabah apakah bisa membayar lunas hutang yang dipinjam atau tidak
+dari hasil _modelling_ didaptakan nilai f-score sebesar 89%, dan setelah diuji coba menggunakan data acak ternyata model bisa memprediksi seorang calon nasabah apakah bisa membayar lunas hutang yang dipinjam atau tidak.
