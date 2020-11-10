@@ -26,18 +26,18 @@ Berikut adalah beberapa contoh hasil analisis data
 
 >![Melihat Data kemampuan nasabah melunasi pinjaman](/loan_status.png)
 
-Kurva menunjukan seberapa banyak nasabah yang dapat melunasi pinjamannya dan yang tidak
+Kurva 1 menunjukan seberapa banyak nasabah yang dapat melunasi pinjamannya dan yang tidak
 
 >![Data berdasarkan Grade](/grade.png)
 
-kurva kemampuan nasabah melunasi pinjamannya berdasarkan _grade_ dari nasabah tersebut.
+Kurva 2 menunjukan kemampuan nasabah melunasi pinjamannya berdasarkan _grade_ dari nasabah tersebut.
 # Model Building
 
 Pertama, saya mengubah variabel kategori menjadi variabel dummy, lalu membagi data _training_ menjadi 20% dari data total. 
 
 Dengan metode _deep learning_ _keras_, saya menggunakan _Neural Network_ dengan _input layer_ sebanyak 78 sel. _Hidden layer_ yang saya gunakan adalah sel sebelumnya dibagi 2 dengan metode aktivasi _ReLU_ (_Rectified Linear Unit_). Sedangkan _output layer_ nya menggunakan metode aktivasi _sigmoid_, optimasi _'adam'_ dan loss _'binary-crossentropy'_. Metode ini digunakan karena pada kasus ini hanya ada 2 output yaitu Ya (_Full Paid_) atau Tidak (_Charged Off_).
 
-* ![Model](/model.png)
+![Model](/model.png)
 
 dari grafik bisa kita lihat hubungan kurva hasil _training_ (_loss_) dan validasi data (_val_loss_). Dengan model ini saya akan mencoba untuk memprediksi data random. 
 
