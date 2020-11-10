@@ -3,7 +3,7 @@
 
 LendingClub adalah perusahaan pinjaman peer-to-peer asal USA dan berkantor pusat di San Francisco, California. Perusahaan ini memberikan pinjaman secara peer-to-peer pertama dengan jasa keamanan sebagai nilai jual yaitu dengan Securities and Exchange Commission (SEC), selain itu perusahaan ini juga menawarkan perdagangan pinjaman di pasar sekunder. LendingClub adalah platform pinjaman peer-to-peer terbesar di dunia.
 
-Tujuan analsis dataset ini adalah untuk memprediksi apakah seorang calon nasabah akan bisa membayar lunas hutang yang dipinjam atau tidak
+Tujuan analsis dataset ini adalah untuk memprediksi apakah calon nasabah bisa membayar lunas pinjamannya
 
 # Code Resources
 
@@ -35,8 +35,8 @@ Dengan metode _deep learning_ _keras_, saya menggunakan _Neural Network_ dengan 
 
 * ![Model](/model.png)
 
-dari grafik bisa kita lihat bahwa kurva hasil _training_ (_loss_) dan validasi data (_val_loss_) _overfitting_. sehingga model ini bisa digunakan untuk memprediksi data berhubungan. 
+dari grafik bisa kita lihat hubungan kurva hasil _training_ (_loss_) dan validasi data (_val_loss_). Dengan model ini saya akan mencobauntuk memprediksi data berhubungan. 
 
 # Model Performance
 
-dari hasil _modelling_ didaptakan nilai f-score sebesar 89%, dan setelah diuji coba menggunakan data acak ternyata model bisa memprediksi seorang calon nasabah apakah bisa membayar lunas hutang yang dipinjam atau tidak.
+dari hasil _modelling_ didapatkan nilai f-score sebesar 89%, dan setelah diuji coba menggunakan data acak ternyata model ini bisa memprediksi apakah calon nasabah bisa membayar lunas pinjamannya atau tidak.
