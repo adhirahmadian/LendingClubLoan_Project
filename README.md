@@ -31,7 +31,7 @@ Berikut adalah beberapa contoh hasil analisis data
 
 Pertama, saya mengubah variabel kategori menjadi variabel dummy. Saya juga membagi data _training_ menjadi 20% dari data total. 
 
-Dengan metode _deep learning_ _keras_, saya menggunakan _Neural Network_ dengan _input layer_ sebanyak 78 sel dan untuk _hidden layer_ adalah sel sebelumnya dibagi 2 dengan metode aktivasi _ReLU_ (_Rectified Linear Unit_), dan output layernya 1 dengan metode aktivasi _sigmoid_, optimasi _'adam'_ dan loss _'binary-crossentropy'_. Metode ini digunakan karena pada kasus ini hanya ada 2 output yaitu Ya (_Full Paid_) atau Tidak (_Charged Off_).
+Dengan metode _deep learning_ _keras_, saya menggunakan _Neural Network_ dengan _input layer_ sebanyak 78 sel, _hidden layer_ adalah sel sebelumnya dibagi 2 dengan metode aktivasi _ReLU_ (_Rectified Linear Unit_), output layernya 1 dengan metode aktivasi _sigmoid_, serta optimasi _'adam'_ dan loss _'binary-crossentropy'_. Metode ini digunakan karena pada kasus ini hanya ada 2 output yaitu Ya (_Full Paid_) atau Tidak (_Charged Off_).
 
 * ![Model](/model.png)
 
