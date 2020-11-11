@@ -36,8 +36,9 @@ Graph 2 shows the customer's ability to pay off their loan based on the _grade_ 
 
 First, I changed the categorical variables into dummy variables, then converse 20% of the total data into training data.
 
-With the _deep learning_ method, I used _Neural Network_ with an _input layer_ of 78 cells. _Hidden layer_ that I use is the previous cell divided by 2 with the _ReLU_ (_Rectified Linear Unit_) activation method. Meanwhile, the _output layer_ uses the method of sigmoid activation, optimization of _adam_ and loss of _binary-crossentropy_. All of methods used in this case is chosed because there are only 2 outputs, Yes (_Full Paid_) or No (_Charged Off_).
-![Model](/model.png)
+With the _deep learning_ method, I used _Neural Network_ with an _input layer_ of 78 cells. _Hidden layer_ that I use is the previous cell divided by 2 with the _ReLU_ (_Rectified Linear Unit_) activation method. Meanwhile, the _output layer_ uses the method of sigmoid activation, optimization of _adam_ and loss of _binary-crossentropy_. All of methods used in this case is chose because there are only 2 outputs, Yes (_Full Paid_) or No (_Charged Off_).
+
+>![Model](/model.png)
 
 From the graph, we can see the relationship between training results (loss) and data validation (validation). With this model I will try to predict random data.
 
