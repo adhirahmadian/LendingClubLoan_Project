@@ -43,4 +43,4 @@ From the graph, we can see the relationship between training results (loss) and 
 
 # Model Performance
 
-After being tested using random data using this model, I'm sure 89% can predict whether a prospective customer can pay off his loan in full.
+After being tested by random data using this model, I'm sure 89% can predict whether a prospective customer can pay off his loan.
