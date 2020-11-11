@@ -1,46 +1,46 @@
 # LendingClubLoan_Project
 # Overview
 
-LendingClub adalah perusahaan pinjaman peer-to-peer asal USA dan berkantor pusat di San Francisco, California. Perusahaan ini memberikan pinjaman secara peer-to-peer pertama dengan jasa keamanan sebagai nilai jual yaitu dengan Securities and Exchange Commission (SEC), selain itu perusahaan ini juga menawarkan perdagangan pinjaman di pasar sekunder. LendingClub adalah platform pinjaman peer-to-peer terbesar di dunia.
+LendingClub is a peer-to-peer lending company from USA headquartered in San Francisco, California. This company provides the first peer-to-peer loan with security services as a selling point, namely the Securities and Exchange Commission (SEC), in addition the company also offers trading loans on the secondary market. LendingClub is the world's largest peer-to-peer lending platform.
 
-Tujuan dari analsis data ini adalah untuk memprediksi calon nasabah membayar lunas pinjamannya
+The purpose of this data analysis is to predict whether a prospective customer will pay off his loan
 
 # Code Resources
 
-Python Version: 3.7
+Python Version: 3
 
 Packages: pandas, numpy, sklearn, matplotlib, seaborn, keras.
 
-https://www.kaggle.com/wordsforthewise/lending-club
+dataset = https://www.kaggle.com/wordsforthewise/lending-club
 
 # Data Cleaning
 
-Setelah mendapatkan dataset, saya melakukan _data cleaning_ agar dapat digunakan untuk _modelling_. 
-* mengeliminasi _employer title_ dan _employer length_.
-* membaurkan _title_ dengan _purpose_.
-* mengisi _missing data_ _mort_acc_ dengan rataan nilai _mort_acc_ terhadap _total_acc_.
+After I got the dataset, data cleaning was performed on the data so that it could be used for modeling.
+* eliminates _employer title_ and _employer length_.
+* Mixing _title_ with _purpose_ because it has same output.
+* fill in the missing data in _mort_acc_ with the average value of _mort_acc_ by _total_acc_.
 
 # EDA
 
-Berikut adalah beberapa contoh hasil analisis data
+Here are some examples of data analysis results
 
 >![Melihat Data kemampuan nasabah melunasi pinjaman](/loan_status.png)
 
-Kurva 1 menunjukan seberapa banyak nasabah yang dapat melunasi pinjamannya dan yang tidak
+Graph 1 shows how many customers can pay off their loans and who cannot
 
 >![Data berdasarkan Grade](/grade.png)
 
-Kurva 2 menunjukan kemampuan nasabah melunasi pinjamannya berdasarkan _grade_ dari nasabah tersebut.
+Graph 2 shows the customer's ability to pay off their loan based on the _grade_ of the customer.
+
 # Model Building
 
-Pertama, saya mengubah variabel kategori menjadi variabel dummy, lalu membagi data _training_ menjadi 20% dari data total. 
+First, I changed the categorical variables into dummy variables, then converse 20% of the total data into training data.
 
-Dengan metode _deep learning_ _keras_, saya menggunakan _Neural Network_ dengan _input layer_ sebanyak 78 sel. _Hidden layer_ yang saya gunakan adalah sel sebelumnya dibagi 2 dengan metode aktivasi _ReLU_ (_Rectified Linear Unit_). Sedangkan _output layer_ nya menggunakan metode aktivasi _sigmoid_, optimasi _'adam'_ dan loss _'binary-crossentropy'_. Metode ini digunakan karena pada kasus ini hanya ada 2 output yaitu Ya (_Full Paid_) atau Tidak (_Charged Off_).
-
+With the _deep learning_ method, I used _Neural Network_ with an _input layer_ of 78 cells. _Hidden layer_ that I use is the previous cell divided by 2 with the _ReLU_ (_Rectified Linear Unit_) activation method. Meanwhile, the _output layer_ uses the method of sigmoid activation, optimization of _adam_ and loss of _binary-crossentropy_. All of methods used in this case is chosed because there are only 2 outputs, Yes (_Full Paid_) or No (_Charged Off_).
 ![Model](/model.png)
 
-dari grafik bisa kita lihat hubungan kurva hasil _training_ (_loss_) dan validasi data (_val_loss_). Dengan model ini saya akan mencoba untuk memprediksi data random. 
+From the graph, we can see the relationship between training results (loss) and data validation (validation). With this model I will try to predict random data.
 
 # Model Performance
 
-Setelah diuji coba menggunakan data acak, dengan model ini saya yakin 89% bisa memprediksi apakah calon nasabah bisa membayar lunas pinjamannya. 
+After being tested using random data using this model, I'm sure 89% can predict whether a prospective customer can pay off his loan in full.
