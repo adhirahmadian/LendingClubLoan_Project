@@ -9,7 +9,7 @@ The purpose of this data analysis is to predict whether a prospective customer w
 
 Python Version: 3
 
-Packages: pandas, numpy, sklearn, matplotlib, seaborn, keras.
+Packages: pandas, numpy, matplotlib, seaborn, sklearn, keras.
 
 dataset = https://www.kaggle.com/wordsforthewise/lending-club
 
