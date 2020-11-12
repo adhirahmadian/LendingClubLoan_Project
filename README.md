@@ -3,7 +3,9 @@
 
 LendingClub is a peer-to-peer lending company from USA headquartered in San Francisco, California. This company provides the first peer-to-peer loan with security services as a selling point, namely the Securities and Exchange Commission (SEC), in addition the company also offers trading loans on the secondary market. LendingClub is the world's largest peer-to-peer lending platform.
 
-The purpose of this data analysis is to predict whether a prospective customer will pay off his loan
+Given historical data on loans given out with information on whether or not the borrower defaulted (charge-off), can we build a model that can predict wether or nor a borrower will pay back their loan? 
+
+This way in the future when we get a new potential customer we can assess whether or not they are likely to pay back the loan.
 
 # Code Resources
 
