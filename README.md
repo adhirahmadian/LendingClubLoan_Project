@@ -47,3 +47,5 @@ From the graph, we can see the relationship between training results (loss) and 
 # Model Performance
 
 After being tested by random data using this model, I'm sure 89% can predict whether a prospective customer can pay off his loan.
+
+> for the complete explaination, please refer to .ipynb file
